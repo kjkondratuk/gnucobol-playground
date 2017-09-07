@@ -1,0 +1,3 @@
+#! /bin/bash
+
+rm -rf pgcob output.txt err.txt

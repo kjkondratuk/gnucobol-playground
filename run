@@ -1,0 +1,6 @@
+#! /bin/bash
+
+./clean
+./make
+
+./pgcob 1>output.txt 2>err.txt

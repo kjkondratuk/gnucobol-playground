@@ -8,7 +8,7 @@
 
        FILE-CONTROL.
            SELECT IN-FILE ASSIGN TO '/home/nosferatu/workspace/gnucobol-
-      -    'playground/fixed_record_file.txt'
+      -                             'playground/fixed_record_file.txt'
                ORGANIZATION IS LINE SEQUENTIAL
                ACCESS MODE IS SEQUENTIAL.
 
@@ -59,8 +59,9 @@
        STOP RUN.
 
        0100-READ-FILE.
-           READ IN-FILE NEXT RECORD INTO W01-RECORD WITH NO LOCK
-               AT END SET END-OF-FILE TO TRUE
-               NOT AT END DISPLAY W01-RECORD
+           READ IN-FILE NEXT RECORD
+               INTO W01-RECORD WITH NO LOCK
+                   AT END SET END-OF-FILE TO TRUE
+                   NOT AT END DISPLAY W01-RECORD
            END-READ.
        0100-READ-FILE-EXIT. EXIT.
